@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:sgraph="http://www.yakindu.org/sct/sgraph/2.0.0">
-  <sgraph:Statechart xmi:id="_IPEiAI_CEeaE_NItBGtDFQ" specification="/* Blink LED3 EDU-CIA-NXP */&#xD;&#xA;&#xD;&#xA;interface:&#xD;&#xA;&#xD;&#xA;in event evTick&#xD;&#xA;&#xD;&#xA;operation opLED(LEDNumber:integer,&#xD;&#xA;&#x9;State:boolean)&#xD;&#xA;&#xD;&#xA;//const LEDR: integer = 0&#xD;&#xA;//const LEDG: integer = 1&#xD;&#xA;//const LEDB: integer = 2&#xD;&#xA;//const LED1: integer = 3&#xD;&#xA;//const LED2: integer = 4&#xD;&#xA;const LED3: integer = 5&#xD;&#xA;&#xD;&#xA;const LED_ON: boolean = false&#xD;&#xA;const LED_OFF: boolean = true&#xD;&#xA;&#xD;&#xA;internal:&#xD;&#xA;" name="prefix">
+  <sgraph:Statechart xmi:id="_IPEiAI_CEeaE_NItBGtDFQ" specification="/* Blink LED3 EDU-CIA-NXP */&#xD;&#xA;&#xD;&#xA;interface:&#xD;&#xA;&#xD;&#xA;in event evTick&#xD;&#xA;&#xD;&#xA;operation opLED(LEDNumber:integer,&#xD;&#xA;&#x9;State:boolean)&#xD;&#xA;&#xD;&#xA;const LEDR: integer = 0&#xD;&#xA;//const LEDG: integer = 1&#xD;&#xA;//const LEDB: integer = 2&#xD;&#xA;//const LED1: integer = 3&#xD;&#xA;//const LED2: integer = 4&#xD;&#xA;//const LED3: integer = 5&#xD;&#xA;&#xD;&#xA;const LED_ON: boolean = false&#xD;&#xA;const LED_OFF: boolean = true&#xD;&#xA;&#xD;&#xA;internal:&#xD;&#xA;" name="prefix">
     <regions xmi:id="_IPEiA4_CEeaE_NItBGtDFQ" name="main region">
       <vertices xsi:type="sgraph:Entry" xmi:id="_IPEiDY_CEeaE_NItBGtDFQ">
         <outgoingTransitions xmi:id="_XlKfgBMaEeevvbhLDk5fag" specification="" target="_EvYFTRMaEeevvbhLDk5fag"/>
       </vertices>
-      <vertices xsi:type="sgraph:State" xmi:id="_EvYFTRMaEeevvbhLDk5fag" specification="entry / opLED(LED3, LED_OFF)" name="APAGADO" incomingTransitions="_-DYHbMuIEeaJzKf0Ssal0Q _XlKfgBMaEeevvbhLDk5fag">
+      <vertices xsi:type="sgraph:State" xmi:id="_EvYFTRMaEeevvbhLDk5fag" specification="entry / opLED(LEDR, LED_OFF)" name="APAGADO" incomingTransitions="_-DYHbMuIEeaJzKf0Ssal0Q _XlKfgBMaEeevvbhLDk5fag">
         <outgoingTransitions xmi:id="_-Dwh58uIEeaJzKf0Ssal0Q" specification="evTick" target="_GPX4bRMaEeevvbhLDk5fag"/>
       </vertices>
-      <vertices xsi:type="sgraph:State" xmi:id="_GPX4bRMaEeevvbhLDk5fag" specification="entry / opLED(LED3, LED_ON)" name="ENCENDIDO" incomingTransitions="_-Dwh58uIEeaJzKf0Ssal0Q">
+      <vertices xsi:type="sgraph:State" xmi:id="_GPX4bRMaEeevvbhLDk5fag" specification="entry / opLED(LEDR, LED_ON)" name="ENCENDIDO" incomingTransitions="_-Dwh58uIEeaJzKf0Ssal0Q">
         <outgoingTransitions xmi:id="_-DYHbMuIEeaJzKf0Ssal0Q" specification="evTick" target="_EvYFTRMaEeevvbhLDk5fag"/>
       </vertices>
     </regions>
